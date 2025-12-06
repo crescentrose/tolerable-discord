@@ -6,7 +6,7 @@ at Discord, mostly aimed at reducing visual clutter and improving performance.
 
 ## List of changes
 
-- The Nitro and Shop links are hidden from the `Direct Messages` page.
+- The Nitro, Shop and Quest links are hidden from the `Direct Messages` page.
 - Animated avatar decorations and animated profile effects will no longer appear either in profiles
   or in the channels.
 - "Discover" and "Download App" buttons are gone from the sidebar.

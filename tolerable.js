@@ -29,6 +29,7 @@ loader("div#app-mount").then((_) => {
   stylesheet.innerText = `
 
   /* Hide Nitro and Shop buttons from the sidebar */
+  li[role^="listitem"]:has(div > a[href*="/quest-home"]),
   li[role^="listitem"]:has(div > a[href*="/store"]),
   li[role^="listitem"]:has(div > a[href*="/shop"]) {
     display: none;
