@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Tolerable Discord",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Rolls back some of the Discord enshittification.",
   "icons": {
     "48": "icons/tolerable-48.png"
@@ -15,5 +15,14 @@
         "tolerable.js"
       ]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  }
 }
