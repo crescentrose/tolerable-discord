@@ -65,6 +65,13 @@ loader("div#app-mount").then((_) => {
   .container__686c4 {
     display: none;
   }
+
+  /* Hide expanded/promoted quest promo cards */
+  div[class*="contentExpanded"]:has(div[class*="questPromoContent"]),
+  div[class*="contentExpanded"]:has(div[class*="rewardHighlightWrapper"]),
+  div[class*="contentExpanded"]:has(div[class*="promotedBadge"]) {
+    display: none;
+  }
 `
 
   document.head.appendChild(stylesheet);
