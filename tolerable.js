@@ -66,10 +66,10 @@ loader("div#app-mount").then((_) => {
     display: none;
   }
 
-  /* Hide expanded/promoted quest promo cards */
-  div[class*="contentExpanded"]:has(div[class*="questPromoContent"]),
-  div[class*="contentExpanded"]:has(div[class*="rewardHighlightWrapper"]),
-  div[class*="contentExpanded"]:has(div[class*="promotedBadge"]) {
+  /* Hide quest promo wrappers */
+  div[class*="wrapperVisible"]:has(> div[class*="contentWrapper"] div[class*="questPromoContent"]),
+  div[class*="wrapperVisible"]:has(> div[class*="contentWrapper"] div[class*="rewardHighlightWrapper"]),
+  div[class*="wrapperVisible"]:has(> div[class*="contentWrapper"] > div[class*="contentCollapsed"]):has(> div[class*="contentWrapper"] > div[class*="contentExpanded"]) {
     display: none;
   }
 `
