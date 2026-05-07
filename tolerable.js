@@ -65,6 +65,13 @@ loader("div#app-mount").then((_) => {
   .container__686c4 {
     display: none;
   }
+
+  /* Hide quest promo wrappers */
+  div[class*="wrapperVisible"]:has(> div[class*="contentWrapper"] div[class*="questPromoContent"]),
+  div[class*="wrapperVisible"]:has(> div[class*="contentWrapper"] div[class*="rewardHighlightWrapper"]),
+  div[class*="wrapperVisible"]:has(> div[class*="contentWrapper"] > div[class*="contentCollapsed"]):has(> div[class*="contentWrapper"] > div[class*="contentExpanded"]) {
+    display: none;
+  }
 `
 
   document.head.appendChild(stylesheet);
