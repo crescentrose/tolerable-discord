@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Tolerable Discord",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Rolls back some of the Discord enshittification.",
   "icons": {
     "48": "icons/tolerable-48.png"
